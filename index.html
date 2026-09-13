@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Impossible Website — a cinematic experimental site built for GitHub Pages." />
+  <title>The Impossible Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="cursor" id="cursor"></div>
+  <div class="noise"></div>
+
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-copy">
+      <p class="kicker">GITHUB PAGES EXPERIMENT</p>
+      <h1>THE IMPOSSIBLE<br>WEBSITE</h1>
+      <p>This website should not feel like it is running for free.</p>
+      <button id="enterBtn">ENTER THE SYSTEM</button>
+      <small>Built as a cinematic browser experience around one portrait, motion and imagination.</small>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top"><span></span><strong>THE IMPOSSIBLE WEBSITE</strong></a>
+    <nav>
+      <a href="#arrival">Arrival</a>
+      <a href="#worlds">Worlds</a>
+      <a href="#lab">Lab</a>
+      <a href="#game">Game</a>
+      <a href="#finale">Finale</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section" id="arrival">
+      <div class="hero-copy reveal">
+        <p class="kicker">CINEMATIC PORTAL</p>
+        <h2>One person.<br>Five worlds.<br>One browser.</h2>
+        <p class="lede">This is a stress test for what a "simple" GitHub Pages site can become when design, motion, atmosphere and identity all collide.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#worlds">Explore the worlds</a>
+          <button class="btn ghost" id="soundToggle" type="button">Pulse mode: off</button>
+        </div>
+        <div class="fact-strip">
+          <div><strong>0 backend</strong><span>pure front-end</span></div>
+          <div><strong>1 portrait</strong><span>identity engine</span></div>
+          <div><strong>∞ mood</strong><span>design freedom</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-shell">
+          <img src="assets/hero-portrait.jpg" alt="Portrait of the creator" />
+          <div class="halo halo-a"></div>
+          <div class="halo halo-b"></div>
+          <div class="scanlines"></div>
+        </div>
+        <div class="floating-panel panel-a"><span>STATUS</span><strong>LIVE</strong><small>GitHub Pages</small></div>
+        <div class="floating-panel panel-b"><span>MODE</span><strong>IMMERSIVE</strong><small>Scroll to descend</small></div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="track">
+        <span>INTERACTIVE</span><span>•</span>
+        <span>CINEMATIC</span><span>•</span>
+        <span>REACTIVE</span><span>•</span>
+        <span>3D-STYLE DEPTH</span><span>•</span>
+        <span>PARTICLE SYSTEM</span><span>•</span>
+        <span>MICRO-INTERACTIONS</span><span>•</span>
+        <span>INTERACTIVE</span><span>•</span>
+        <span>CINEMATIC</span><span>•</span>
+        <span>REACTIVE</span><span>•</span>
+        <span>3D-STYLE DEPTH</span><span>•</span>
+        <span>PARTICLE SYSTEM</span><span>•</span>
+        <span>MICRO-INTERACTIONS</span>
+      </div>
+    </section>
+
+    <section class="worlds section" id="worlds">
+      <div class="section-head reveal">
+        <p class="kicker">THE FIVE WORLDS</p>
+        <h2>Each zone is a different version of the same idea.</h2>
+      </div>
+      <div class="world-grid">
+        <article class="world-card reveal tilt-card">
+          <div class="world-index">01</div>
+          <h3>The Portal</h3>
+          <p>A clean arrival point where atmosphere, identity and motion introduce the visitor to the experience.</p>
+        </article>
+        <article class="world-card reveal tilt-card">
+          <div class="world-index">02</div>
+          <h3>The Orbit</h3>
+          <p>Floating cards, rotating rings and suspended interface elements that feel like a command deck in space.</p>
+        </article>
+        <article class="world-card reveal tilt-card">
+          <div class="world-index">03</div>
+          <h3>The Archive</h3>
+          <p>A gallery-like room that turns one portrait into a living visual system using masks, light and distortion.</p>
+        </article>
+        <article class="world-card reveal tilt-card">
+          <div class="world-index">04</div>
+          <h3>The Lab</h3>
+          <p>Interactive meters, graphs and animated indicators proving that static hosting can still feel technical and alive.</p>
+        </article>
+        <article class="world-card reveal tilt-card">
+          <div class="world-index">05</div>
+          <h3>The Core</h3>
+          <p>A final reveal: all of this is just HTML, CSS, JavaScript and nerve.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="orbit section">
+      <div class="orbit-stage reveal">
+        <div class="orbit-rings ring-1"></div>
+        <div class="orbit-rings ring-2"></div>
+        <div class="orbit-rings ring-3"></div>
+        <div class="orbit-center">
+          <img src="assets/portrait-square.jpg" alt="Square portrait of the creator" />
+        </div>
+        <div class="orbit-node n1"><span>Build</span></div>
+        <div class="orbit-node n2"><span>Motion</span></div>
+        <div class="orbit-node n3"><span>Identity</span></div>
+        <div class="orbit-node n4"><span>Code</span></div>
+      </div>
+    </section>
+
+    <section class="archive section">
+      <div class="section-head reveal narrow">
+        <p class="kicker">THE ARCHIVE</p>
+        <h2>One portrait, remixed into multiple realities.</h2>
+      </div>
+      <div class="archive-grid">
+        <figure class="archive-card reveal mode-clean"><img src="assets/portrait-square.jpg" alt="Portrait clean treatment"><figcaption>Clean / Primary identity</figcaption></figure>
+        <figure class="archive-card reveal mode-neon"><img src="assets/portrait-square.jpg" alt="Portrait neon treatment"><figcaption>Neon / Holographic shift</figcaption></figure>
+        <figure class="archive-card reveal mode-ghost"><img src="assets/portrait-square.jpg" alt="Portrait ghost treatment"><figcaption>Ghost / Infrared mood</figcaption></figure>
+        <figure class="archive-card reveal mode-scan"><img src="assets/portrait-square.jpg" alt="Portrait scan treatment"><figcaption>Scan / Machine vision</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="lab section" id="lab">
+      <div class="section-head reveal">
+        <p class="kicker">SYSTEM LAB</p>
+        <h2>Animated numbers make the illusion feel engineered.</h2>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric reveal"><span>Intensity</span><strong data-target="97">0</strong><small>%</small></div>
+        <div class="metric reveal"><span>Atmosphere</span><strong data-target="88">0</strong><small>%</small></div>
+        <div class="metric reveal"><span>Front-end magic</span><strong data-target="100">0</strong><small>%</small></div>
+        <div class="metric reveal"><span>Sanity remaining</span><strong data-target="12">0</strong><small>%</small></div>
+      </div>
+      <div class="bars reveal">
+        <div class="bar"><label>Design energy</label><div><span style="--w: 92%"></span></div></div>
+        <div class="bar"><label>Motion depth</label><div><span style="--w: 86%"></span></div></div>
+        <div class="bar"><label>Scroll drama</label><div><span style="--w: 94%"></span></div></div>
+        <div class="bar"><label>GitHub disbelief</label><div><span style="--w: 98%"></span></div></div>
+      </div>
+    </section>
+
+    <section class="game section" id="game">
+      <div class="section-head reveal narrow">
+        <p class="kicker">MINI-GAME</p>
+        <h2>Catch the light cores.</h2>
+        <p>Move your pointer or finger over the glowing cores before they fade. It is pointless — which makes it perfect.</p>
+      </div>
+      <div class="game-box reveal" id="gameBox">
+        <div class="game-hud"><span>Score: <strong id="score">0</strong></span><button id="resetGame" type="button">Reset</button></div>
+        <div class="game-arena" id="gameArena"></div>
+      </div>
+    </section>
+
+    <section class="finale section" id="finale">
+      <div class="finale-card reveal">
+        <p class="kicker">FINAL REVEAL</p>
+        <h2>There was never a server room.<br>Just imagination in the browser.</h2>
+        <p>The impossible part is not the code. It is realising how far you can push a free static site when you stop treating it like a boring page and start treating it like an experience.</p>
+        <a class="btn primary" href="#top">Return to the beginning</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>The Impossible Website</strong> — built for a GitHub Pages stress test.</p>
+    <p>Made with HTML, CSS, JavaScript, a portrait and unreasonable ambition.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
